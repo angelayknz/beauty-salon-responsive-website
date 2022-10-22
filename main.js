@@ -24,3 +24,12 @@ var swiper = new Swiper(".mySwiper", {
   window.addEventListener('scroll', () => {
     header.classList.toggle(`shadow`, window.scrollY > 0)
 })
+
+//Loader
+onload=() => {
+  const load = document.getElementById('loader')
+
+  setTimeout(() => {
+    load.style.display = 'none'
+  }, 2500)
+}
